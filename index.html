@@ -65,15 +65,16 @@
         margin: 35px;
     }
     a.link:hover { background-size: 100% 2px; }
+    .animate__animated.animate__fadeIn { --animate-duration: 4s; }
     </style>
 </head>
 <body>
-    <div class="body animate__animated animate__fadeIn">
-        <div class="head">
+    <div class="body">
+        <div class="head animate__animated animate__fadeIn">
             <h1 style="font-size: 48px; font-weight: 700"><img src="wolf.svg" height="64" width="64"> Reborn of the Furry Tech</h1>
             <h1 class="date" style="font-size: 64px; font-weight: 500">XX.05.2023</h1>
         </div>
-        <div class="links">
+        <div class="links animate__animated animate__fadeIn animate__delay-1s">
             <h2>
                 <a class="link" href="#">mighty</a>
                 <a class="link" href="#">stable</a>
@@ -81,7 +82,7 @@
             </h2>
         </div>
     </div>
-    <div class="dis animate__animated animate__fadeIn">
+    <div class="dis animate__animated animate__fadeIn animate__delay-2s">
         <a href="#"><img src="discord.svg" height="32" width="32"></a>
     </div>
 </body>
