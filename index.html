@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>F.T [site]</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+    html { 
+        font-family: 'Inter', sans-serif; 
+        color: white; 
+        background-color: #171717; 
+        cursor: default;
+        background: url('back.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        margin: 0; padding: 0;
+    }
+    div.head { cursor: url(wolf.svg), progress; }
+    div.head h1 { 
+        background: linear-gradient(90deg, #CA0079 44.85%, rgb(32, 38, 57) 125%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-shadow: 0px 0px 10px #CA0079;
+    }
+    div.head img { vertical-align: middle; font-weight: 700; }
+    div.head { font-weight: 400;  margin-bottom: 70px;}
+    div.body {
+        font-weight: 600;
+        border-radius: 1em;
+        padding: 1em;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    div.links { white-space: nowrap; }
+    div.dis {
+        border-radius: 1em;
+        padding: 1em;
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    
+
+    a { color: white; text-decoration: none; cursor: pointer; }
+    a.link { 
+        color: white;
+        text-decoration: none; 
+        transition: background-size 800ms; 
+        background-repeat: no-repeat;
+        background-position: 100% 100%, 100% 0;
+        background-image: linear-gradient(90.02deg, #CA0079 0%, rgba(202, 0, 121, 0) 183.61%);
+	    background-size: 0% 2px;
+        margin: 35px;
+    }
+    a.link:hover { background-size: 100% 2px; }
+    </style>
+</head>
+<body>
+    <div class="body animate__animated animate__fadeIn">
+        <div class="head">
+            <h1 style="font-size: 48px; font-weight: 700"><img src="wolf.svg" height="64" width="64"> Reborn of the Furry Tech</h1>
+            <h1 class="date" style="font-size: 64px; font-weight: 500">XX.05.2023</h1>
+        </div>
+        <div class="links">
+            <h2>
+                <a class="link" href="#">mighty</a>
+                <a class="link" href="#">stable</a>
+                <a class="link" href="#">debug</a>
+            </h2>
+        </div>
+    </div>
+    <div class="dis animate__animated animate__fadeIn">
+        <a href="#"><img src="discord.svg" height="32" width="32"></a>
+    </div>
+</body>
+</html>
